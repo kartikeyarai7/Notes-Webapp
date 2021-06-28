@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <h3 class="text-light text-center m-3">Note Taking App</h3>
+      <form class="m-3">
+        <div class="mb-3">
+          <label for="exampleSubject" class="form-label text-light">Topic</label>
+          <input type="text" class="form-control" id="exampleSubject" aria-describedby="emailHelp" />
+        </div>
+        <div class="mb-3">
+          <label for="exampleNotes" class="form-label text-light">Notes</label>
+          <textarea name="" class="form-control" id="exampleNotes"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="addNotes">Submit</button>
+        <button type="submit" class="btn btn-danger" id="clearNotes">Clear</button>
+      </form>
+    </div>
+    <section class="p-5">
+      <div class="row d-flex justify-content-around" id="notesCollection">
+        <div class="col-3 bg-light p-3 m-3">
+          <h4 class="text-center">Topic 1</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellat eos beatae deleniti deserunt a reprehenderit iure incidunt numquam corrupti?</p>
+        </div>
+        <div class="col-3 bg-light p-3 m-3" id="cr">
+          <h4 class="text-center">Topic 2</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellat eos beatae deleniti deserunt a reprehenderit iure incidunt numquam corrupti?</p>
+        </div>
+        <div class="col-3 bg-light p-3 m-3">
+          <h4 class="text-center">Topic 3</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellat eos beatae deleniti deserunt a reprehenderit iure incidunt numquam corrupti?</p>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
